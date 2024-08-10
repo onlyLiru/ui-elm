@@ -1,0 +1,15 @@
+@import '../../index.scss';
+
+.small {
+  @apply w-[100px];
+}
+.medium {
+  @apply w-[200px];
+}
+.larger {
+  @apply w-[400px];
+}
+
+.elmButton {
+  background-color: var(--primary-color);
+}

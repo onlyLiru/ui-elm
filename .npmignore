@@ -1,0 +1,15 @@
+node_modules
+src
+.storybook
+.vscode
+.DS_Store
+.git
+.gitignore
+.vite
+.eslintignore
+.eslintrc.js
+.prettierrc
+.prettierignore
+tsconfig.json
+vite.config.ts
+README.md
