@@ -6,10 +6,19 @@
 .medium {
   @apply w-[200px];
 }
-.larger {
+.large {
   @apply w-[400px];
 }
 
-.elmButton {
+.primary {
   background-color: var(--primary-color);
+  color: #fff;
+}
+.normal {
+  background-color: var(--btn-normal-bg-color);
+  color: #333;
+}
+
+.elmButton {
+  text-align: center;
 }

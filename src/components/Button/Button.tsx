@@ -18,9 +18,21 @@ export type ButtonProps = {
   size?: 'small' | 'medium' | 'large';
 };
 
-const Button: React.FC<ButtonProps> = ({ label, size = 'medium' }) => {
+const Button: React.FC<ButtonProps> = ({
+  label,
+  size = 'medium',
+  primary = false,
+}) => {
   return (
-    <div className={classNames(styles.elmButton, styles[size])}>{label}</div>
+    <div
+      className={classNames(
+        styles.elmButton,
+        styles[size],
+        styles[primary ? 'primary' : 'normal'],
+      )}
+    >
+      {label}
+    </div>
   );
 };
 
