@@ -1,4 +1,3 @@
-import React from 'react';
 export type ButtonProps = {
     children?: React.ReactNode | string;
     label?: string;
@@ -15,5 +14,5 @@ export type ButtonProps = {
      */
     size?: 'small' | 'medium' | 'large';
 };
-declare const Button: React.FC<ButtonProps>;
-export default Button;
+declare const _default: (props: ButtonProps) => import("react/jsx-runtime").JSX.Element;
+export default _default;
