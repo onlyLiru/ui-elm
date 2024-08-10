@@ -3,7 +3,8 @@ import classNames from 'classnames';
 import styles from './button.module.scss';
 
 export type ButtonProps = {
-  label: string;
+  children?: React.ReactNode | string;
+  label?: string;
   /** 背景色 */
   backgroundColor?: string;
   /** 点击事件 */
@@ -19,9 +20,12 @@ export type ButtonProps = {
 };
 
 const Button: React.FC<ButtonProps> = ({
-  label,
+  children = null,
+  label = '',
   size = 'medium',
   primary = false,
+  backgroundColor,
+  onClick = () => {},
 }) => {
   return (
     <div
@@ -30,8 +34,16 @@ const Button: React.FC<ButtonProps> = ({
         styles[size],
         styles[primary ? 'primary' : 'normal'],
       )}
+      style={
+        backgroundColor
+          ? {
+              backgroundColor: backgroundColor,
+            }
+          : {}
+      }
+      onClick={onClick}
     >
-      {label}
+      {label || children}
     </div>
   );
 };

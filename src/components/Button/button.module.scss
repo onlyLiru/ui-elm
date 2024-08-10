@@ -1,13 +1,13 @@
 @import '../../index.scss';
 
 .small {
-  @apply w-[100px];
+  @apply w-[100px] rounded-sm;
 }
 .medium {
-  @apply w-[200px];
+  @apply w-[200px] rounded-md;
 }
 .large {
-  @apply w-[400px];
+  @apply w-[400px] rounded-lg;
 }
 
 .primary {
