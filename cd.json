@@ -1,5 +1,3 @@
 {
-  "cname": "ele-bp-components.pages.alibaba-inc.com",
-  "public": "./docs",
-  "branch": "main"
+  "public": "./docs"
 }
