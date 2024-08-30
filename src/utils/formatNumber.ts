@@ -1,6 +1,6 @@
 /**
 
-格式化数字
+格式化数字d
 @param num 要格式化的数字
 @param options 格式化选项
 @param options.format 格式化的类型，可选值为'money'（货币），'int'（整数），'percent'（百分比），'origin'（原始）
