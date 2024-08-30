@@ -8,7 +8,7 @@ bp公共组件和方法
 npm i @alife/ui-elm-bp --save
 ```
 
-# Docs
+# [Docs](https://pages.alibaba-inc.com/gitlab-pages/site/wb-lr903313/ui-elm-bp)
 
 ```
 https://pages.alibaba-inc.com/gitlab-pages/site/wb-lr903313/ui-elm-bp
