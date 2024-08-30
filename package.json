@@ -1,6 +1,6 @@
 {
-  "name": "ui-elm",
-  "version": "0.0.4",
+  "name": "@alife/ui-elm-bp",
+  "version": "0.0.3",
   "type": "module",
   "main": "dist/eui.umd.js",
   "module": "dist/eui.es.js",
@@ -76,5 +76,8 @@
     "typescript": "^5.2.2",
     "vite": "^5.3.4",
     "vite-plugin-compression": "^0.5.1"
+  },
+  "publishConfig": {
+    "registry": "https://registry.anpm.alibaba-inc.com"
   }
 }
