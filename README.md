@@ -1,6 +1,6 @@
 # @alife/ui-elm-bp
 
-bp公共组件和方法ttss
+bp公共组件和方法
 
 ## Install
 
