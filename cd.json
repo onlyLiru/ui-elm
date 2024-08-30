@@ -1,3 +1,4 @@
 {
-  "public": "./docs"
+  "public": "./docs",
+  "branch": "master"
 }
