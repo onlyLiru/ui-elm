@@ -1,0 +1,5 @@
+{
+  "builder": "@ali/builder-ice-pkg",
+  "nodeVersion": 18,
+  "packageManager": "tnpm@10"
+}
