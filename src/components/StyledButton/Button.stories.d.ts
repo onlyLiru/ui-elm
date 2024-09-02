@@ -10,6 +10,9 @@ declare const meta: {
         backgroundColor: {
             control: "color";
         };
+        primary: {
+            control: "boolean";
+        };
     };
     args: {
         onClick: import("@vitest/spy").Mock<[], void>;
@@ -18,6 +21,6 @@ declare const meta: {
 export default meta;
 type Story = StoryObj<typeof meta>;
 export declare const Primary: Story;
-export declare const Secondary: Story;
+export declare const Medium: Story;
 export declare const Large: Story;
 export declare const Small: Story;
