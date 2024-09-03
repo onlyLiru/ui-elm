@@ -8,7 +8,7 @@
 @returns 格式化后的数字
 */
 
-export function formatNumber(num: number, options: { format: 'money' | 'int' | 'percent' | 'origin', precision?: number }): any {
+export function formatNumber(num: number, options: { format: 'money' | 'int' | 'percent' | 'origin', precision?: number, [key: string]: any }): any {
   let formattedNumber: string;
   if (isNaN(num)) { return num }
 
