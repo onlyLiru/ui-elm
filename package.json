@@ -1,6 +1,6 @@
 {
   "name": "@alife/ui-elm-bp",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "main": "dist/eui.umd.js",
   "module": "dist/eui.es.js",
@@ -86,5 +86,5 @@
   "publishConfig": {
     "registry": "https://registry.anpm.alibaba-inc.com"
   },
-  "repository": "git@github.com:onlyLiru/ui-elm.git"
+  "repository": "git@gitlab.alibaba-inc.com:ele-bp-components/bp-ui.git"
 }
