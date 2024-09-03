@@ -20,6 +20,8 @@ function App() {
   const formattedPercent1 = formatNumber(0.123, { format: 'percent' });
   console.log(formattedPercent1); // Output: "12.30%"
 
+  console.log(formatNumber(0.1234, { format: 'money' }));
+
 
   return (
     <>
