@@ -1,15 +1,30 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import Button from './components/StyledButton/Button';
+import { formatNumber } from './utils';
 
 function App() {
   const [count, setCount] = useState(0);
+
+  const formattedMoney = formatNumber(1234567.8, { format: 'money', precision: 2 });
+  console.log(formattedMoney); // Output: "1,234,567.89"
+
+  const formattedMoney1 = formatNumber(1234567.8, { format: 'money' });
+  console.log(formattedMoney1); // Output: "1,234,567.89"
+
+  const formattedInt = formatNumber(1234567.89, { format: 'int' });
+  console.log(formattedInt); // Output: "1234568"
+
+  const formattedPercent = formatNumber(0.123, { format: 'percent', precision: 2 });
+  console.log(formattedPercent); // Output: "12.30%"
+
+  const formattedPercent1 = formatNumber(0.123, { format: 'percent' });
+  console.log(formattedPercent1); // Output: "12.30%"
+
+
   return (
     <>
       <Button>Button</Button>
 
-      <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
