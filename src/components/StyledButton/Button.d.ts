@@ -1,5 +1,9 @@
-export type ButtonProps = {
+export interface ButtonProps {
+    /** 背景色 */
     children?: React.ReactNode | string;
+    /**
+     * children也可以使用label代替
+     */
     label?: string;
     /** 背景色 */
     backgroundColor?: string;
@@ -10,9 +14,10 @@ export type ButtonProps = {
      */
     primary?: boolean;
     /**
-     * 按钮的尺寸
+     * How large should the button be?
      */
     size?: 'small' | 'medium' | 'large';
-};
-declare const _default: (props: ButtonProps) => import("react/jsx-runtime").JSX.Element;
-export default _default;
+    /** 自定义样式style */
+    style?: any;
+}
+export declare const Button: (props: ButtonProps) => import("react/jsx-runtime").JSX.Element;
