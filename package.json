@@ -24,7 +24,8 @@
     "docs": "typedoc --out ./docs ./src",
     "test": "vitest",
     "prepare": "husky",
-    "commitlint": "commitlint --edit"
+    "commitlint": "commitlint --edit",
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "*.css": [
