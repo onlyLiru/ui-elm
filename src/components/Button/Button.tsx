@@ -21,7 +21,7 @@ export type ButtonProps = {
 
 const Button: React.FC<ButtonProps> = ({
   children = null,
-  label = '',
+label = '',
   size = 'medium',
   primary = false,
   backgroundColor,
@@ -31,13 +31,13 @@ const Button: React.FC<ButtonProps> = ({
     <div
       className={classNames(
         styles.elmButton,
-        styles[size],
+ styles[size],
         styles[primary ? 'primary' : 'normal'],
       )}
       style={
         backgroundColor
           ? {
-              backgroundColor: backgroundColor,
+         backgroundColor: backgroundColor,
             }
           : {}
       }
