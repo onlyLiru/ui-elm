@@ -35,7 +35,7 @@ label = '',
         styles[primary ? 'primary' : 'normal'],
       )}
       style={
-        backgroundColor
+      backgroundColor
           ? {
          backgroundColor: backgroundColor,
             }
