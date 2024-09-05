@@ -17,7 +17,7 @@ export function formatNumber(num: number, options: { format: 'money' | 'int' | '
   switch (options.format) {
     case 'money':
       if (typeof precision === 'number' && precision > 0) {
-        formattedNumber = num.toFixed(precision).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+formattedNumber = num.toFixed(precision).replace(/\d(?=(\d{3})+\.)/g, '$&,');
       } else {
         formattedNumber = num.toLocaleString();
       }
